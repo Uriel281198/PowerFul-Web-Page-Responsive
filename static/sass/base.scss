@@ -1,0 +1,24 @@
+
+@import './header.scss';
+
+
+:root{
+    --redcolor: hsl(0, 100%, 68%);
+    --maincolor : #fff;
+    --veryDarkBlue: hsl(230, 29%, 20%);
+    --darkGrayishBlue: hsl(230, 11%, 40%);
+    --grayishBlue: hsl(231, 7%, 65%);
+    --LightGrayishBlue: hsl(207, 33%, 95%);
+    
+  }
+
+  
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+//$ sass --watch base.scss ../css/styles.css

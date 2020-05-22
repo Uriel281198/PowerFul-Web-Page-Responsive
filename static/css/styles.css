@@ -1,0 +1,256 @@
+:root {
+  --redcolor: hsl(0, 100%, 68%);
+  --maincolor: #fff;
+  --veryDarkBlue: hsl(230, 29%, 20%);
+  --darkGrayishBlue: hsl(230, 11%, 40%);
+  --grayishBlue: hsl(231, 7%, 65%);
+  --LightGrayishBlue: hsl(207, 33%, 95%);
+}
+
+header .bg-devices {
+  right: 0;
+  z-index: -1;
+  position: absolute;
+  background-color: var(--LightGrayishBlue);
+  width: 30%;
+  height: 60%;
+  border-radius: 1px 1px 1px 80px;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+}
+header nav .logo img {
+  width: 20px;
+  height: 20px;
+}
+header nav .enlaces-header {
+  display: none;
+}
+header nav .open-enlaces {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 30%;
+  background: white;
+  position: fixed;
+  top: 15%;
+  transition: width 2s ease;
+}
+header nav .open-enlaces a {
+  text-decoration: none;
+  color: var(--veryDarkBlue);
+  font-weight: bold;
+  font-family: "Oswald", sans-serif;
+  margin-bottom: 10px;
+}
+header nav .open-enlaces a:nth-child(3) {
+  text-align: center;
+  width: 80%;
+  border-bottom: 1px solid gray;
+}
+header nav .open-enlaces a:last-child {
+  color: gray;
+}
+header nav .hamburguer {
+  background-image: url("../../img/icon-hamburger.svg");
+  width: 18px;
+  height: 18px;
+  transition: all ease-in-out 0.3s;
+}
+header .contenedor-main {
+  overflow: hidden;
+  margin-top: 20px;
+}
+header .contenedor-main .img-devices img {
+  width: 150%;
+}
+header .contenedor-main .header-text {
+  margin-top: 30px;
+  padding: 20px;
+}
+header .contenedor-main .header-text .new {
+  display: flex;
+  align-items: center;
+}
+header .contenedor-main .header-text .new span {
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 5px 10px;
+  color: white;
+  border-radius: 20px;
+  background-color: var(--veryDarkBlue);
+  margin-right: 15px;
+}
+header .contenedor-main .header-text .new p {
+  letter-spacing: 3px;
+  font-size: 0.9rem;
+  color: var(--grayishBlue);
+  font-family: "Barlow", sans-serif;
+}
+header .contenedor-main .header-text .contenedoText h1 {
+  font-size: 38px;
+  font-weight: 800;
+  font-family: "Oswald", sans-serif;
+  color: var(--veryDarkBlue);
+}
+header .contenedor-main .header-text .contenedoText p {
+  font-size: 1.3rem;
+  color: var(--grayishBlue);
+  font-family: "Barlow", sans-serif;
+}
+header .contenedor-main .header-text .buttons {
+  display: flex;
+  align-items: center;
+}
+header .contenedor-main .header-text .buttons a {
+  padding: 15px;
+  background-color: var(--redcolor);
+  color: white;
+  border-radius: 10px;
+  text-decoration: none;
+  font-family: "Barlow", sans-serif;
+}
+header .contenedor-main .header-text .buttons p {
+  margin-left: 10px;
+  color: var(--grayishBlue);
+  font-family: "Barlow", sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+}
+@media screen and (min-width: 1024px) {
+  header {
+    height: 100vh;
+    width: 100%;
+    margin: auto;
+  }
+  header .bg-devices {
+    right: 0;
+    z-index: -1;
+    position: absolute;
+    background-color: var(--LightGrayishBlue);
+    width: 48%;
+    height: 64%;
+    border-radius: 1px 1px 1px 80px;
+  }
+  header nav {
+    width: 80%;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+  }
+  header nav .logo {
+    margin-top: 50px;
+  }
+  header nav .logo img {
+    width: 30px;
+    height: 30px;
+  }
+  header nav .enlaces-header {
+    display: flex;
+    margin-top: 50px;
+  }
+  header nav .enlaces-header a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: var(--veryDarkBlue);
+    font-weight: bold;
+    font-family: "Oswald", sans-serif;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+  }
+  header nav .enlaces-header a:last-child {
+    color: gray;
+  }
+  header nav .hamburguer {
+    display: none;
+  }
+  header .contenedor-main {
+    margin-left: 8%;
+    height: 80%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+  }
+  header .contenedor-main .img-devices {
+    margin-right: -550px;
+  }
+  header .contenedor-main .img-devices img {
+    width: 1250px;
+  }
+  header .contenedor-main .header-text {
+    margin-top: 30px;
+    padding: 20px;
+  }
+  header .contenedor-main .header-text .new {
+    display: flex;
+    align-items: center;
+  }
+  header .contenedor-main .header-text .new span {
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding: 5px 10px;
+    color: white;
+    border-radius: 20px;
+    background-color: var(--veryDarkBlue);
+    margin-right: 15px;
+  }
+  header .contenedor-main .header-text .new p {
+    letter-spacing: 3px;
+    font-size: 1.4rem;
+    color: var(--grayishBlue);
+    font-family: "Barlow", sans-serif;
+  }
+  header .contenedor-main .header-text .contenedoText h1 {
+    font-size: 4rem;
+    font-weight: 800;
+    font-family: "Oswald", sans-serif;
+    color: var(--veryDarkBlue);
+  }
+  header .contenedor-main .header-text .contenedoText p {
+    font-size: 1.3rem;
+    color: var(--grayishBlue);
+    font-family: "Barlow", sans-serif;
+  }
+  header .contenedor-main .header-text .buttons {
+    display: flex;
+    align-items: center;
+  }
+  header .contenedor-main .header-text .buttons a {
+    padding: 15px;
+    background-color: var(--redcolor);
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+    font-family: "Barlow", sans-serif;
+  }
+  header .contenedor-main .header-text .buttons p {
+    margin-left: 10px;
+    color: var(--grayishBlue);
+    font-family: "Barlow", sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+  }
+}
+
+:root {
+  --redcolor: hsl(0, 100%, 68%);
+  --maincolor: #fff;
+  --veryDarkBlue: hsl(230, 29%, 20%);
+  --darkGrayishBlue: hsl(230, 11%, 40%);
+  --grayishBlue: hsl(231, 7%, 65%);
+  --LightGrayishBlue: hsl(207, 33%, 95%);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*# sourceMappingURL=styles.css.map */
